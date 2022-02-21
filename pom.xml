@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.duvalhub</groupId>
         <artifactId>duvalhub-starter-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
     <artifactId>dummy-duvalhub-service</artifactId>
     <version>1.0.0</version>
