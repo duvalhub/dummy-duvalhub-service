@@ -15,7 +15,7 @@ public class Controller {
     }
 
     @PostMapping
-    public String error() {
-        throw new DuvalhubException();
+    public DuvalhubException error() {
+        return new DuvalhubException();
     }
 }
