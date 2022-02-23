@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 import static com.duvalhub.dummy.artifact2.rest.EndpointPaths.ENDPOINT_VERSION_V1;
 import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 
-import static com.duvalhub.roleaop.artifact2.aop.AlloBobo.ALLO_BOBO;
+//import static com.duvalhub.roleaop.artifact2.aop.AlloBobo.ALLO_BOBO;
+//import static com.duvalhub.roleaop.
+import static com.duvalhub.rolepermission.Df.TEST_STUFF;
 
-import static com.duvalhub.roleaop.
 @RestController
 @RequestMapping(path = ENDPOINT_VERSION_V1)
 public class TheController implements EndpointPaths {

@@ -1,0 +1,17 @@
+com/duvalhub/dummy/artifact2/aop/RoleAndPermission.class
+com/duvalhub/dummy/artifact2/rest/EndpointPaths.class
+com/duvalhub/dummy/artifact2/service/SlowService.class
+com/duvalhub/dummy/artifact2/service/role/RoleAndPermissionCache.class
+com/duvalhub/dummy/Run.class
+com/duvalhub/dummy/Controller.class
+com/duvalhub/dummy/artifact2/service/PrivilegedService_Impl.class
+com/duvalhub/dummy/artifact2/mediator/Mediator_Impl.class
+com/duvalhub/dummy/artifact2/service/role/RoleEntry.class
+com/duvalhub/dummy/artifact2/service/role/PermissionEntry.class
+com/duvalhub/dummy/artifact2/service/SlowService_Impl.class
+com/duvalhub/dummy/artifact2/mediator/Mediator.class
+com/duvalhub/dummy/artifact2/rest/TheController.class
+com/duvalhub/dummy/artifact2/aop/PerformanceLogger.class
+com/duvalhub/dummy/Application.class
+com/duvalhub/dummy/artifact2/ApplicationProfiles.class
+com/duvalhub/dummy/artifact2/service/PrivilegedService.class

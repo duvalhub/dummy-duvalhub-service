@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.duvalhub</groupId>
         <artifactId>duvalhub-starter-parent</artifactId>
-        <version>1.0.11</version>
+        <version>1.0.12-SNAPSHOT</version>
     </parent>
     <artifactId>dummy-duvalhub-service</artifactId>
     <version>1.0.0</version>
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>com.duvalhub</groupId>
             <artifactId>duvalhub-starter-role-permission</artifactId>
-            <version>1.0.9-SNAPSHOT</version>
+<!--            <version>1.0.9-SNAPSHOT</version>-->
         </dependency>
 
         <dependency>
