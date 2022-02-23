@@ -1,5 +1,6 @@
 com/duvalhub/dummy/artifact2/aop/RoleAndPermission.class
 com/duvalhub/dummy/artifact2/rest/EndpointPaths.class
+com/duvalhub/dummy/Myconfiguration.class
 com/duvalhub/dummy/artifact2/service/SlowService.class
 com/duvalhub/dummy/artifact2/service/role/RoleAndPermissionCache.class
 com/duvalhub/dummy/Run.class
