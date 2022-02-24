@@ -11,7 +11,7 @@ import static com.duvalhub.dummy.artifact2.rest.EndpointPaths.ENDPOINT_VERSION_V
 import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 
 
-//import static com.duvalhub.roleaop.artifact2.aop.
+import static com.duvalhub.roleaop.artifact2.aop.AlloBobo.ALLO_BOBO;
 
 //import static com.duvalhub.roleaop.artifact2.aop.AlloBobo.ALLO_BOBO;
 //import static com.duvalhub.roleaop.artifact2.AlloBobo.ALLO_BOBO;
