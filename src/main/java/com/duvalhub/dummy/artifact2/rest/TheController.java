@@ -1,5 +1,6 @@
 package com.duvalhub.dummy.artifact2.rest;
 
+import com.acme.beans.TheAcmeBean;
 import com.duvalhub.dummy.artifact2.mediator.Mediator;
 import com.duvalhub.web.beans.TheBean;
 import lombok.SneakyThrows;
@@ -19,6 +20,7 @@ import static org.springframework.util.MimeTypeUtils.TEXT_PLAIN_VALUE;
 //import org.springframework.web.bind.annotation.GetMapping;
 
 import static com.acme.Something.theLabe;
+
 import com.acme.Something;
 
 //import static com.duvalhub.roleaop.artifact2.aop.AlloBobo.ALLO_BOBO;
@@ -28,7 +30,7 @@ import com.acme.Something;
 
 
 //import static com.duvalhub.roleaop.
-import static com.duvalhub.rolepermission .Df.TEST_STUFF;
+import static com.duvalhub.rolepermission.Df.TEST_STUFF;
 
 @RestController
 @RequestMapping(path = ENDPOINT_VERSION_V1)
@@ -36,11 +38,14 @@ public class TheController implements EndpointPaths {
 
     final TheBean theBean;
 
+    final TheAcmeBean theAcmeBean;
+
     final Mediator blobMediator;
 
     @Autowired
-    public TheController(TheBean theBean, Mediator blobMediator) {
+    public TheController(TheBean theBean, TheAcmeBean theAcmeBean, Mediator blobMediator) {
         this.theBean = theBean;
+        this.theAcmeBean = theAcmeBean;
         this.blobMediator = blobMediator;
     }
 
@@ -69,6 +74,7 @@ public class TheController implements EndpointPaths {
                 .add(TEST_STUFF)
                 .add(theLabe)
                 .add(new Something().getOtherThing())
+                .add(theAcmeBean.helloFromMyLibertyLib())
                 .add(Class.forName("org.springframework.web.bind.annotation.GetMapping").getName())
                 .add(Integer.toString(theBean.getNumber()))
                 .toString());
@@ -134,7 +140,6 @@ public class TheController implements EndpointPaths {
 //        return ResponseEntity.ok(Arrays.asList(environment.getActiveProfiles()));
 //
 //    }
-
 
 
 }
