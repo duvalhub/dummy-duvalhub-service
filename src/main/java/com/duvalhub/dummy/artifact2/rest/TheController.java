@@ -1,7 +1,7 @@
 package com.duvalhub.dummy.artifact2.rest;
 
 import com.duvalhub.dummy.artifact2.mediator.Mediator;
-//import com.duvalhub.web.beans.TheBean;
+import com.duvalhub.web.beans.TheBean;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -40,8 +40,8 @@ public class TheController implements EndpointPaths {
 
     @Autowired
     public TheController(Mediator blobMediator) {
-//            this.theBean = theBean;
-            this.blobMediator = blobMediator;
+//        this.theBean = theBean;
+        this.blobMediator = blobMediator;
     }
 
     @GetMapping(path = PROFILES_PATH, produces = {APPLICATION_JSON_VALUE})
@@ -65,6 +65,7 @@ public class TheController implements EndpointPaths {
     public ResponseEntity<String> selectSecretHelloWorld() {
 
         return ResponseEntity.ok(new StringJoiner("\n")
+                .add("test # 1")
                 .add(TEST_STUFF)
                 .add(theLabe)
                 .add(new Something().getOtherThing())

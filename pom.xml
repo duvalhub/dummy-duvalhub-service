@@ -42,6 +42,14 @@
 <!--        </dependency>-->
 
 
+<!--        <dependency>-->
+<!--            <groupId>com.duvalhub</groupId>-->
+<!--            <artifactId>duvalhub-starter&#45;&#45;web</artifactId>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.duvalhub</groupId>
+            <artifactId>duvalhub-web</artifactId>
+        </dependency>
 
         <!--        <dependency>-->
 <!--            <groupId>com.duvalhub</groupId>-->
