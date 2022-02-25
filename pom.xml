@@ -48,7 +48,7 @@
 <!--        </dependency>-->
         <dependency>
             <groupId>com.duvalhub</groupId>
-            <artifactId>duvalhub-web</artifactId>
+            <artifactId>duvalhub-starter-web</artifactId>
         </dependency>
 
         <!--        <dependency>-->

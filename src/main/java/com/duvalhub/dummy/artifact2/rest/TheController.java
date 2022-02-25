@@ -34,13 +34,13 @@ import static com.duvalhub.rolepermission .Df.TEST_STUFF;
 @RequestMapping(path = ENDPOINT_VERSION_V1)
 public class TheController implements EndpointPaths {
 
-//    final TheBean theBean;
+    final TheBean theBean;
 
     final Mediator blobMediator;
 
     @Autowired
-    public TheController(Mediator blobMediator) {
-//        this.theBean = theBean;
+    public TheController(TheBean theBean, Mediator blobMediator) {
+        this.theBean = theBean;
         this.blobMediator = blobMediator;
     }
 
@@ -70,7 +70,7 @@ public class TheController implements EndpointPaths {
                 .add(theLabe)
                 .add(new Something().getOtherThing())
                 .add(Class.forName("org.springframework.web.bind.annotation.GetMapping").getName())
-//                .add(Integer.toString(theBean.getNumber()))
+                .add(Integer.toString(theBean.getNumber()))
                 .toString());
 
     }
