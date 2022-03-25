@@ -71,12 +71,12 @@ public class TheController implements EndpointPaths {
 
         return ResponseEntity.ok(new StringJoiner("\n")
                 .add("test # 1")
-                .add(TEST_STUFF)
-                .add(theLabe)
-                .add(new Something().getOtherThing())
-                .add(theAcmeBean.helloFromMyLibertyLib())
-                .add(Class.forName("org.springframework.web.bind.annotation.GetMapping").getName())
-                .add(Integer.toString(theBean.getNumber()))
+                .add(String.format("%20s%s", "TEST_STUFF", TEST_STUFF))
+                .add(String.format("%20s%s", "theLabe", theLabe))
+                .add(String.format("%20s%s", "getOtherThing", new Something().getOtherThing()))
+                .add(String.format("%20s%s", "helloFromMyLibertyLib", theAcmeBean.helloFromMyLibertyLib()))
+                .add(String.format("%20s%s", "GetMapping", Class.forName("org.springframework.web.bind.annotation.GetMapping").getName()))
+                .add(String.format("%20s%s", "getNumber", Integer.toString(theBean.getNumber())))
                 .toString());
 
     }
