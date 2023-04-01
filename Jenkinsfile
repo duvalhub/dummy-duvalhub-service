@@ -1,6 +1,6 @@
 @Library([
-    'continuous-deployment-library@fix/character-unsafe',
-    'shared-library@fix/character-unsafe'
+    'continuous-deployment-library@master',
+    'shared-library@master'
 ]) _
 
 continuousDeployment()
